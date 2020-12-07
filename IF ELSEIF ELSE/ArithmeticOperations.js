@@ -1,9 +1,9 @@
 //defining module for taking input from user
-io= require('process');
+const readInput = require('readline-sync');
 //getting the inputs from the user
-let inputOne= parseInt(process.argv[2]);
-let inputTwo= parseInt(process.argv[3]);
-let inputThree= parseInt(process.argv[4]);
+let inputOne= readInput.questionInt("Enter first Number : ")
+let inputTwo= readInput.questionInt("Enter second Number : ")
+let inputThree= readInput.questionInt("Enter third Number : ")
 //calculating different results from different formulas
 resultOne= inputOne+inputTwo*inputThree;
 resultTwo= inputThree+inputOne/inputTwo;
