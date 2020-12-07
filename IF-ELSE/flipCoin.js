@@ -11,3 +11,5 @@ else
 {
     console.log("Tails");
 }
+
+const prompt = require('prompt-sunc')();
