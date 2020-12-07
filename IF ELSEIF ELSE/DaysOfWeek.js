@@ -1,8 +1,7 @@
-//defining process module to get input from the user
-io= require('process');
-console.log("please enter a number to find weekday");
-//taking numerical input to write days of week.
-let input= process.argv[2];
+const readInput = require('readline-sync');
+
+let input = readInput.questionInt("Enter a single digit number (0-6) : ");
+
 //if else for writing days of week from input
 if(input==0)
 {
