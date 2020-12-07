@@ -1,9 +1,8 @@
-fs= require("fs");
-//defining module process for taking input from the user
-io= require('process');
-console.log("Please enter the single digit number");
-//taking single  digit input from the user 
-input= process.argv[2];
+
+const readInput = require('readline-sync');
+
+let input = readInput.questionInt("Enter a single digit number : ");
+
 //if else condition for converting it into word
 if(input==0)
 {
@@ -50,4 +49,4 @@ else if(input==9)
     console.log("Nine");
 }
 else
-    console.log("input was not in required range");
+    console.log("Invalid Input");
